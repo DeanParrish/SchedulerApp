@@ -1,0 +1,7 @@
+{
+  "name": "schedulerapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
