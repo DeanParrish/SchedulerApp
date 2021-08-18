@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Form, FormControl, FormGroup } from '@angular/forms';
 import { AuthService } from '../../services/authservice.service';
 import { MatDialog } from '@angular/material/dialog';

@@ -1,4 +1,4 @@
-<form [formGroup]="registerForm" *ngIf="loginEmailClicked == true">
+<form  class="emailLoginForm" [formGroup]="registerForm" *ngIf="loginEmailClicked == true">
     <div class="form-group">
       <label>Email address</label>
       <input type="email" formControlName="email" class="form-control" required>
@@ -9,8 +9,8 @@
       <label class="error">{{errorMessage}}</label>
       <label class="success">{{successMessage}}</label>
     </div>
-    <button type="submit" (click)="loginWithEmail(registerForm.value)" class="btn btn-default">Login</button>
-    <button (click)="registerRedirect()" class="btn btn-default">Register</button>
+    <ion-button type="submit" (click)="loginWithEmail(registerForm.value)" class="btn btn-default">Login</ion-button>
+    <ion-button (click)="registerRedirect()" class="btn btn-default">Register</ion-button>
  </form>
 
  <div class='registerType'>

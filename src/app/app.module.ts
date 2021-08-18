@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
@@ -24,6 +25,8 @@ import { RegisterfirebaseComponent } from './components/registerfirebase/registe
 
 import { LoginlinkComponent } from './elements/loginlink/loginlink.component';
 import { LogoutlinkComponent } from './elements/logoutlink/logoutlink.component';
+import { RegisterlinkComponent } from './elements/registerlink/registerlink.component';
+import { LoginfirebaseComponent } from './components/loginfirebase/loginfirebase.component';
 
 
 @NgModule({
@@ -32,6 +35,8 @@ import { LogoutlinkComponent } from './elements/logoutlink/logoutlink.component'
     RegisterfirebaseComponent,
     LoginlinkComponent,
     LogoutlinkComponent,
+    RegisterlinkComponent,
+    LoginfirebaseComponent
     ],
   entryComponents: [],
   imports: [
@@ -45,7 +50,9 @@ import { LogoutlinkComponent } from './elements/logoutlink/logoutlink.component'
     MatDialogModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule 
     ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

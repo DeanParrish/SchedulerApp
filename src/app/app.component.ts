@@ -12,9 +12,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Home', url: '/home', icon: 'mail' },
     { title: 'Customer Info', url: '/customerinfo', icon: 'paper-plane' },
-    { title: 'Login', url: '/register', icon: 'heart' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   isAuthenticated: any;
   constructor(private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,

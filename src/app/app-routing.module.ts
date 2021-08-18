@@ -5,23 +5,9 @@ import { LoginfirebaseComponent } from './components/loginfirebase/loginfirebase
 import { RegisterfirebaseComponent } from './components/registerfirebase/registerfirebase.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'folder/Inbox',
-  //   pathMatch: 'full'
-  // },
-  // {
-  //   path: 'folder/:id',
-  //   loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  // },
   {
     path: '',
-    redirectTo: 'folder/Inbox',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    component: LoginfirebaseComponent
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'customerinfo',
@@ -30,6 +16,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterfirebaseComponent
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   }
 ];
 
